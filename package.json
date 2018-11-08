@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/charlesgarner98/express-workshop#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-formidable": "^1.2.0"
   }
 }
