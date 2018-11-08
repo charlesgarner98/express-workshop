@@ -6,6 +6,12 @@ const fs = require('fs')
 app.use(express.static("public"))
 app.use(formidable())
 
+//GET requests
+app.get('/get-posts', function (req, res) {
+  console.log('Getting posts')
+  res.sendFile(__dirname + '/data/posts.json')
+})
+
 //POST requests
 app.post('/create-post', function (req, res) {
   let file = fs.readFileSync(__dirname + '/data/posts.json', 'utf8')
